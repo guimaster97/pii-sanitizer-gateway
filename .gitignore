@@ -1,0 +1,9 @@
+# Ignorar dependências e configurações sensíveis
+node_modules/
+.dev.vars
+wrangler.jsonc
+package-lock.json
+.wrangler/node_modules/
+.venv/
+.wrangler/
+__pycache__/
