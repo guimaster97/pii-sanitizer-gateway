@@ -1,5 +1,7 @@
 # 🚀 Sanitiza.AI | High-Performance AI Gateway
 
+> 💸 **Está perdendo dinheiro com a OpenAI?** > [**Clique aqui para usar nossa Calculadora de ROI Interativa**](https://pii-sanitizer.www-guiferreira70.workers.dev/calculator) e veja quanto você economizaria hoje.
+
 > **Reduza sua fatura da OpenAI em até 30% e automatize sua conformidade LGPD em uma única camada de infraestrutura.**
 
 ---
@@ -82,5 +84,6 @@ $$Economia = (CacheHits \times CustoToken) - Mensalidade$$
 ---
 
 ## 📄 Licença
+
 
 Distribuído sob a licença MIT. Projetado para escalar com sua agência.
