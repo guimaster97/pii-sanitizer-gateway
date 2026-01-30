@@ -1,5 +1,7 @@
 # 🚀 Sanitiza.AI | High-Performance AI Gateway
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/guimaster97/pii-sanitizer-gateway)
+
 > 💸 **Está perdendo dinheiro com a OpenAI?** > [**Clique aqui para usar nossa Calculadora de ROI Interativa**](https://pii-sanitizer.www-guiferreira70.workers.dev/calculator) e veja quanto você economizaria hoje.
 
 > **Reduza sua fatura da OpenAI em até 30% e automatize sua conformidade LGPD em uma única camada de infraestrutura.**
@@ -87,3 +89,4 @@ $$Economia = (CacheHits \times CustoToken) - Mensalidade$$
 
 
 Distribuído sob a licença MIT. Projetado para escalar com sua agência.
+
