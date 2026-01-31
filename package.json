@@ -1,0 +1,17 @@
+{
+  "name": "pii-sanitizer",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.11.5"
+  },
+  "devDependencies": {
+    "@cloudflare/ai": "^1.2.2",
+    "@cloudflare/workers-types": "^4.20260124.0",
+    "wrangler": "^4.4.0"
+  }
+}

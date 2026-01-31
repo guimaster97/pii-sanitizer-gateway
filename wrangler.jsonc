@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pii-sanitizer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-01-24",
+  "kv_namespaces": [
+    {
+      "binding": "PII_STORAGE",
+      "id": "650bb62f79f343969727418f4b2c3c6f" 
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  }
+}
