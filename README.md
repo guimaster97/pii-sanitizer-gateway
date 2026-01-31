@@ -1,7 +1,4 @@
-
-
-````
-# 🚀 Sanitiza.AI | High-Performance AI Gateway
+Markdown# 🚀 Sanitiza.AI | High-Performance AI Gateway
 
 [![Dev.to](https://img.shields.io/badge/dev.to-Read%20the%20Story-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/guilherme_ferreira_87ce22/i-built-a-serverless-openai-gateway-to-cut-costs-by-30-and-sanitize-pii-open-source-5g06)
 
@@ -60,9 +57,6 @@ response = client.chat.completions.create(
 
 print(response.choices[0].message.content)
 ````
-
----
-
 ## 🧪 Performance & Security (Proven)
 
 We run continuous stress tests to ensure savings don't come at the cost of security.
@@ -91,3 +85,4 @@ $$Savings = (CacheHits \times TokenCost) - MonthlyCost$$
 ## 📄 License
 
 Distributed under the MIT License. Designed to scale with your agency.
+
