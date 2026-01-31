@@ -1,95 +1,96 @@
+
+
+````
 # 🚀 Sanitiza.AI | High-Performance AI Gateway
 
 [![Dev.to](https://img.shields.io/badge/dev.to-Read%20the%20Story-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/guilherme_ferreira_87ce22/i-built-a-serverless-openai-gateway-to-cut-costs-by-30-and-sanitize-pii-open-source-5g06)
 
 [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/guimaster97/pii-sanitizer-gateway)
 
-> 💸 **Está perdendo dinheiro com a OpenAI?** > [**Clique aqui para usar nossa Calculadora de ROI Interativa**](https://pii-sanitizer.www-guiferreira70.workers.dev/calculator) e veja quanto você economizaria hoje.
+> 💸 **Bleeding money with OpenAI?** > [**Click here to use our Interactive ROI Calculator**](https://pii-sanitizer.www-guiferreira70.workers.dev/calculator) and see how much you could save today.
 
-> **Reduza sua fatura da OpenAI em até 30% e automatize sua conformidade LGPD em uma única camada de infraestrutura.**
-
----
-
-## 💰 Por que usar este Gateway?
-
-A maioria das agências de IA queima dinheiro enviando prompts repetidos e dados sensíveis para as LLMs. O **Sanitiza.AI** resolve isso atuando como um Proxy Inteligente no Edge (Cloudflare Workers).
-
-1. **Economia Real (Smart Cache):** Nosso sistema de hash SHA-256 detecta requisições idênticas e entrega a resposta do cache instantaneamente (50ms), **sem cobrar tokens da OpenAI**.
-    
-2. **Blindagem de Dados (Compliance):** Interceptamos e mascaramos CPFs, E-mails e Nomes _antes_ que eles saiam do seu servidor. Seu cliente fica seguro, sua agência fica livre de multas.
-    
-3. **ROI em Tempo Real:** Um dashboard administrativo que prova, em Reais (R$), quanto você economizou no mês.
-    
+> **Slash your OpenAI bill by up to 30% and automate GDPR/CCPA compliance in a single infrastructure layer.**
 
 ---
 
-## 🛠️ Arquitetura de Eficiência
+## 💰 Why use this Gateway?
 
-|**Módulo**|**Função**|**Impacto no Negócio**|
+Most AI agencies burn cash by sending repetitive prompts and sensitive data to LLMs. **Sanitiza.AI** solves this by acting as an Intelligent Proxy on the Edge (Cloudflare Workers).
+
+1. **Real Savings (Smart Cache):** Our SHA-256 hash system detects identical requests and delivers the cached response instantly (50ms), **costing zero OpenAI tokens**.
+
+2. **Data Shielding (Compliance):** We intercept and mask Emails, Names, and IDs (SSN/Tax IDs) *before* they leave your server. Your client stays safe; your agency stays compliant.
+
+3. **Real-Time ROI:** An admin dashboard that proves, in Dollars ($), exactly how much you saved this month.
+
+---
+
+## 🛠️ Efficiency Architecture
+
+|**Module**|**Function**|**Business Impact**|
 |---|---|---|
-|**💰 Smart Cache Engine**|Armazena respostas frequentes por 24h.|**Redução direta de custo** e latência zero para perguntas repetidas.|
-|**🛡️ Hybrid PII Shield**|NER (AI) + Regex de alta precisão para sanitização.|**Risco Zero** de vazamento de dados sensíveis.|
-|**📊 Revenue Dashboard**|Monitoramento financeiro de uso por agência.|Visibilidade total do **Retorno sobre Investimento (ROI)**.|
-|**⚡ Edge Execution**|Roda na rede global da Cloudflare.|Latência mínima, sem overhead de servidor.|
+|**💰 Smart Cache Engine**|Stores frequent responses for 24h.|**Direct cost reduction** and zero latency for repeated queries.|
+|**🛡️ Hybrid PII Shield**|NER (AI) + High-precision Regex for sanitization.|**Zero Risk** of sensitive data leakage.|
+|**📊 Revenue Dashboard**|Financial monitoring of usage per agency key.|Total visibility of **Return on Investment (ROI)**.|
+|**⚡ Edge Execution**|Runs on Cloudflare's global network.|Minimal latency, no server overhead.|
 
 ---
 
-## ⚡ Integração em 30 Segundos
+## ⚡ Integration in 30 Seconds
 
-Não mude sua lógica de negócios. Apenas aponte seu cliente OpenAI para o nosso Gateway.
+Don't change your business logic. Just point your OpenAI client to our Gateway.
 
-### Python (Exemplo)
+### Python (Example)
 
-Python
-
-```
+```python
 from openai import OpenAI
 
-# Aponte para o Sanitiza.AI em vez da API direta da OpenAI
+# Point to Sanitiza.AI instead of the direct OpenAI API
 client = OpenAI(
-    api_key="SUA_KEY_OPENAI",
-    base_url="https://pii-sanitizer.www-guiferreira70.workers.dev/v1"
+    api_key="YOUR_OPENAI_KEY",
+    base_url="[https://pii-sanitizer.www-guiferreira70.workers.dev/v1](https://pii-sanitizer.www-guiferreira70.workers.dev/v1)"
 )
 
-# Adicione sua chave de agência para ativar o Cache e o ROI
+# Add your agency key to activate Cache and ROI tracking
 response = client.chat.completions.create(
     model="gpt-4o-mini",
-    messages=[{"role": "user", "content": "Analise este contrato para o CPF 123.456.789-00"}],
-    extra_headers={"X-Agency-Key": "CLIENTE_BETA_01"}
+    messages=[{"role": "user", "content": "Analyze this contract for user ID 123-456-789"}],
+    extra_headers={"X-Agency-Key": "BETA_CLIENT_01"}
 )
 
 print(response.choices[0].message.content)
-```
+````
 
 ---
 
-## 🧪 Performance & Segurança (Comprovadas)
+## 🧪 Performance & Security (Proven)
 
-Rodamos testes de estresse contínuos para garantir que economia não significa falha de segurança.
+We run continuous stress tests to ensure savings don't come at the cost of security.
 
-- **Recall de Proteção:** 100% (20/20 PIIs bloqueados em testes de carga).
+- **Protection Recall:** 100% (20/20 PIIs blocked in load tests).
     
-- **Latência de Cache:** < 50ms.
+- **Cache Latency:** < 50ms.
     
-- **Auditabilidade:** Logs de auditoria disponíveis via API para fins jurídicos.
+- **Auditability:** Audit logs available via API for legal compliance.
+    
 
 ---
 
-## 📈 Dashboard de ROI
+## 📈 ROI Dashboard
 
-Acesse o painel de controle para ver sua economia em tempo real:
+Access the control panel to view your savings in real-time:
 
-`https://pii-sanitizer.www-guiferreira70.workers.dev/admin/dashboard?key=SUA_ADMIN_KEY`
+`https://pii-sanitizer.www-guiferreira70.workers.dev/admin/dashboard?key=YOUR_ADMIN_KEY`
 
-O sistema calcula automaticamente:
+The system automatically calculates:
 
-$$Economia = (CacheHits \times CustoToken) - Mensalidade$$
+$$Savings = (CacheHits \times TokenCost) - MonthlyCost$$
 
 ---
 
-## 📄 Licença
+## 📄 License
 
+Distributed under the MIT License. Designed to scale with your agency.
 
-Distribuído sob a licença MIT. Projetado para escalar com sua agência.
 
 
