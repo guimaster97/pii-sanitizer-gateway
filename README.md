@@ -1,8 +1,3 @@
-
-
-Markdown
-
-````
 # 🚀 Sanitiza.AI | High-Performance AI Gateway
 
 [![Dev.to](https://img.shields.io/badge/dev.to-Read%20the%20Story-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white)](https://dev.to/guilherme_ferreira_87ce22/i-built-a-serverless-openai-gateway-to-cut-costs-by-30-and-sanitize-pii-open-source-5g06)
@@ -61,35 +56,4 @@ response = client.chat.completions.create(
 )
 
 print(response.choices[0].message.content)
-````
-
----
-
-## 🧪 Performance & Security (Proven)
-
-We run continuous stress tests to ensure savings don't come at the cost of security.
-
-- **Protection Recall:** 100% (20/20 PIIs blocked in load tests).
-    
-- **Cache Latency:** < 50ms.
-    
-- **Auditability:** Audit logs available via API for legal compliance.
-    
-
----
-
-## 📈 ROI Dashboard
-
-Access the control panel to view your savings in real-time:
-
-`https://pii-sanitizer.www-guiferreira70.workers.dev/admin/dashboard?key=YOUR_ADMIN_KEY`
-
-The system automatically calculates:
-
-$$Savings = (CacheHits \times TokenCost) - MonthlyCost$$
-
----
-
-## 📄 License
-
-Distributed under the MIT License. Designed to scale with your agency.
+🧪 Performance & Security (Proven)We run continuous stress tests to ensure savings don't come at the cost of security.Protection Recall: 100% (20/20 PIIs blocked in load tests).Cache Latency: < 50ms.Auditability: Audit logs available via API for legal compliance.📈 ROI DashboardAccess the control panel to view your savings in real-time:https://pii-sanitizer.www-guiferreira70.workers.dev/admin/dashboard?key=YOUR_ADMIN_KEYThe system automatically calculates:$$Savings = (CacheHits \times TokenCost) - MonthlyCost$$📄 LicenseDistributed under the MIT License. Designed to scale with your agency.
