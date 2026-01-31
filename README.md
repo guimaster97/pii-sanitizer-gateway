@@ -1,5 +1,7 @@
 
 
+Markdown
+
 ````
 # 🚀 Sanitiza.AI | High-Performance AI Gateway
 
@@ -91,6 +93,3 @@ $$Savings = (CacheHits \times TokenCost) - MonthlyCost$$
 ## 📄 License
 
 Distributed under the MIT License. Designed to scale with your agency.
-
-
-
