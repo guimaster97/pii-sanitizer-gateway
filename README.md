@@ -86,4 +86,13 @@ $$Savings = (CacheHits \times TokenCost) - MonthlyCost$$
 
 Distributed under the MIT License. Designed to scale with your agency.
 
+## 🗺️ Roadmap & Future Features
+
+Based on community feedback (r/SaaS, r/Cloudflare), here is what we are building next:
+
+- [x] **Core:** Hono Gateway + KV Caching + Basic PII Regex.
+- [ ] **Semantic Caching:** Use Cloudflare Vectorize to cache similar prompts (not just identical ones). *Contributors welcome!*
+- [ ] **Audit Logs (SOC 2):** Exportable logs of exactly *what* was redacted and when, for compliance teams.
+- [ ] **Custom PII Rules:** Allow defining custom regex patterns via API (e.g., specific internal project codes).
+- [ ] **Streaming Support:** Full support for `stream: true` in OpenAI responses (currently buffers the response).
 
